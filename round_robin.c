@@ -9,13 +9,9 @@ for(i=0;i<n;i++)
 {
 p[i]=i+1;
 printf("\n enter the burst time of the process:\n");
-scanf("%d",&bt[i]);
+scanf(&bt[i]);
 }
-for(i=0;i<n;i++)
-{
-bt_rem[i]=bt[i];
-wt[i]=0;
-}
+
 while(1)
 {
 int done =1;
@@ -39,7 +35,7 @@ bt_rem[i]=0;
 }
 if(done==1)
 {
-break;
+continue;
 }
 }
 for(i=0;i<n;i++)
