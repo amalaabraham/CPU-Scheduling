@@ -1,10 +1,11 @@
 #include<stdio.h>
 int main()
 {
-
+float c,p[10],w[10],t[10],avgw=0,avgt=0,temp;
+int i,j;
 printf("Enter the no of processes\n");
 scanf ("%f",&c);
-for (i;i<c;i++)
+for (i=0;i<c;i++)
 {
 	printf("Enter the burst time of processes\n");
 	printf("p[%d]:\n",i);
@@ -23,7 +24,7 @@ if (p[j]>p[j+1])
 
 	}
 }}
-
+w[0]=0;
 for (i=1;i<c;i++)
 {
 

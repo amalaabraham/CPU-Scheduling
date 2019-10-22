@@ -9,9 +9,13 @@ for(i=0;i<n;i++)
 {
 p[i]=i+1;
 printf("\n enter the burst time of the process:\n");
-scanf(&bt[i]);
+scanf("%d",&bt[i]);
 }
-
+for(i=0;i<n;i++)
+{
+bt_rem[i]=bt[i];
+wt[i]=0;
+}
 while(1)
 {
 int done =1;
@@ -35,7 +39,7 @@ bt_rem[i]=0;
 }
 if(done==1)
 {
-continue;
+break;
 }
 }
 for(i=0;i<n;i++)
@@ -59,3 +63,4 @@ printf("\naverage waiting time= %f",awt);
 printf("\naverage turn around time = %f",atat);
 return 0;
 }
+
